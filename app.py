@@ -12,12 +12,11 @@ CORS(app)
 # database connection
 def get_db_connection():
     return mysql.connector.connect(
-        host="cis2368spring.cwxzkbq9zbfc.us-east-1.rds.amazonaws.com",
-        user="admin",
-        password="Netflix123",
-        database="cis2368springdb"
+        host="YOUR_HOST",
+        user="YOUR_USERNAME",
+        password="YOUR_PASSWORD",
+        database="YOUR_DATABASE"
     )
-
 # home route
 @app.route("/")
 def home():
